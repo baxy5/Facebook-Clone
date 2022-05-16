@@ -1,41 +1,71 @@
-import styles from "../styles/Header.module.css";
-
 const Header = () => {
   return (
-    <div className={styles.Header}>
-      <div className={styles.left_header}>
+    <div className="flex p-1.5 px-2.5 justify-between Header">
+      <div className="flex items-center">
         <img
           src={require("../assets/facebook.png")}
-          className={styles.header_logo}
-          alt="facebook-logo"
+          className="block w-9 h-auto"
+          alt="Facebook logo"
         />
-        <div className={styles.header_input}>
-          <img src={require("../assets/search.png")} alt="search-img" />
-          <input type="text" placeholder="Searching on Facebook" />
+        <div className="flex items-center p-3 m-1 rounded-3xl header_input">
+          <img
+            className="w-5 h-auto"
+            src={require("../assets/search.png")}
+            alt="Search icon"
+          />
+          <input
+            className="bg-transparent outline-none border-none pl-1.5"
+            type="text"
+            placeholder="Searching on Facebook"
+          />
         </div>
       </div>
 
-      <div className={styles.middle_header}>
+      <div className="flex items-center">
         <div className="header-home">
-          <img src={require("../assets/home.png")} alt="home-img" />
+          <img
+            className="w-9 h-auto"
+            src={require("../assets/home.png")}
+            alt="Home icon"
+          />
         </div>
         <div className="header-watch">
-          <img src={require("../assets/watch.png")} alt="watch-img" />
+          <img
+            className="w-9 h-auto"
+            src={require("../assets/watch.png")}
+            alt="Watch icon"
+          />
         </div>
         <div className="header-store">
-          <img src={require("../assets/store.png")} alt="store-img" />
+          <img
+            className="w-9 h-auto"
+            src={require("../assets/store.png")}
+            alt="Store icon"
+          />
         </div>
         <div className="header-people">
-          <img src={require("../assets/people.png")} alt="people-img" />
+          <img
+            className="w-9 h-auto"
+            src={require("../assets/people.png")}
+            alt="People icon"
+          />
         </div>
         <div className="header-console">
-          <img src={require("../assets/console.png")} alt="console-img" />
+          <img
+            className="w-9 h-auto"
+            src={require("../assets/console.png")}
+            alt="Console icon"
+          />
         </div>
       </div>
 
-      <div className={styles.right_header}>
-        <div className="header-settings">
-          <img src={require("../assets/setting.png")} alt="setting-img" />
+      <div className="flex items-center">
+        <div className="">
+          <img
+            className="w-9 h-auto"
+            src={require("../assets/setting.png")}
+            alt="Setting icon"
+          />
         </div>
       </div>
     </div>

@@ -25,3 +25,12 @@ body {
   --creamy-white: #f7f7f7;
   --white: #ffffff;
 }
+
+.Header {
+  background-color: var(--white);
+  border-bottom: 2px solid var(--text-color);
+}
+
+.header_input {
+  background-color: var(--text-color);
+}
