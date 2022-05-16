@@ -64,6 +64,7 @@ const Header = () => {
           <img
             className="w-10 h-auto rounded-full"
             src={require("../assets/bakos.jpg")}
+            alt="Self"
           />
           <p className="px-2 font-bold">Bakos</p>
         </div>
