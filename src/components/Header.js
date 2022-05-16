@@ -60,6 +60,20 @@ const Header = () => {
       </div>
 
       <div className="header-setting flex items-center rounded-md">
+        <div className="rounded-full flex items-center hover:bg-gray-500 transition-all ease-in-out duration-300 cursor-pointer mx-2 p-2">
+          <img
+            className="w-10 h-auto rounded-full"
+            src={require("../assets/bakos.jpg")}
+          />
+          <p className="px-2 font-bold">Bakos</p>
+        </div>
+        <div className="rounded-full hover:bg-gray-500 transition-all ease-in-out duration-300 cursor-pointer mx-2 p-2">
+          <img
+            className="w-6 h-auto"
+            src={require("../assets/messenger.png")}
+            alt="Messenger icon"
+          />
+        </div>
         <div className="rounded-full hover:bg-gray-500 transition-all ease-in-out duration-300 cursor-pointer mx-2 p-2">
           <img
             className="w-6 h-auto"
