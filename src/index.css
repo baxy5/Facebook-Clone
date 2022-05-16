@@ -34,3 +34,11 @@ body {
 .header_input {
   background-color: var(--text-color);
 }
+
+.header-home::after {
+  background-color: var(--main-color);
+}
+
+.header-middle div:hover {
+  background-color: grey;
+}
