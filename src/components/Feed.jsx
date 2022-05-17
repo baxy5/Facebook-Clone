@@ -3,7 +3,7 @@ import StoryReel from "./StoryReel";
 
 const Feed = () => {
   return (
-    <div className="feed flex flex-col justify-center items-center py-8 px-40">
+    <div className="feed flex flex-col justify-around items-center py-6 px-5">
       <StoryReel />
       <MessageSender />
     </div>
