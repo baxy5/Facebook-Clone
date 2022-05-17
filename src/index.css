@@ -47,3 +47,11 @@ body {
 .header-middle div:hover {
   background-color: grey;
 }
+
+.message-sender {
+  background-color: var(--text-color);
+}
+
+.message-input {
+  background-color: #f3f4f8;
+}
