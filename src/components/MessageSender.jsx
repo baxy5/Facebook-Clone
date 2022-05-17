@@ -19,7 +19,7 @@ function MessageSender() {
         </div>
 
         <div className="additional py-2 flex items-center w-full">
-          <div className="live flex w-full items-center rounded-md p-1.5 mx-1 hover:bg-gray-500">
+          <div className="live flex w-full items-center rounded-md p-1.5 mx-1 hover:bg-gray-500 transition-all duration-300 ease-in-out cursor-pointer">
             <img
               src={require("../assets/video-camera.png")}
               alt="Camera icon"
@@ -28,7 +28,7 @@ function MessageSender() {
             <p className="font-bold pl-4">Live video</p>
           </div>
 
-          <div className="photos flex w-full items-center rounded-md p-1.5 mx-1 hover:bg-gray-500">
+          <div className="photos flex w-full items-center rounded-md p-1.5 mx-1 hover:bg-gray-500 transition-all duration-300 ease-in-out cursor-pointer">
             <img
               src={require("../assets/image-gallery.png")}
               alt="Gallery icon"
@@ -37,7 +37,7 @@ function MessageSender() {
             <p className="font-bold pl-4">Photos</p>
           </div>
 
-          <div className="feeling flex w-full items-center rounded-md p-1.5 mx-1 hover:bg-gray-500">
+          <div className="feeling flex w-full items-center rounded-md p-1.5 mx-1 hover:bg-gray-500 transition-all duration-300 ease-in-out cursor-pointer">
             <img
               src={require("../assets/smile.png")}
               alt="Smile icon"
