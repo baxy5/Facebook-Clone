@@ -1,5 +1,5 @@
 import React from "react";
-import Story from "../components/Story";
+import Story from "./Story";
 import Reel1 from "../assets/StoryReel/reel1.jpg";
 import Reel2 from "../assets/StoryReel/reel2.jpg";
 import Reel3 from "../assets/StoryReel/reel3.jpg";
