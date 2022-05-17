@@ -7,7 +7,7 @@ import DownArrow from "../assets/down-arrow.png";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar p-1.5">
+    <div className="sidebar py-6 px-3">
       <SidebarRow Icon={People} title="Friends" />
       <SidebarRow Icon={Saved} title="Saved" />
       <SidebarRow Icon={People} title="Groups" />

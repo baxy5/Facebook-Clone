@@ -26,6 +26,11 @@ body {
   --white: #ffffff;
 }
 
+.app {
+  height: 100vh;
+  background-color: var(--creamy-white);
+}
+
 .Header {
   background-color: var(--white);
   border-bottom: 2px solid var(--text-color);

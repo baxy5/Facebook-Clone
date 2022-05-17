@@ -4,10 +4,10 @@ import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
 
-      <div className="app-container">
+      <div className="app-container flex">
         <Sidebar />
         <Feed />
       </div>

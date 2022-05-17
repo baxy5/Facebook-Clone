@@ -1,8 +1,9 @@
+import StoryReel from "./StoryReel";
+
 const Feed = () => {
   return (
-    <div className="feed">
-      <h1>feed</h1>
-      {/* StoryReel */}
+    <div className="feed flex flex-col justify-center items-center py-8 px-40">
+      <StoryReel />
       {/* MessageSender */}
     </div>
   );
