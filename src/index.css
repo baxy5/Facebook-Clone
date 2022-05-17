@@ -55,3 +55,7 @@ body {
 .message-input {
   background-color: #f3f4f8;
 }
+
+.post {
+  background-color: var(--text-color);
+}

@@ -1,7 +1,36 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Post from "../components/Post";
+import icon from "../assets/bakos.jpg";
 
 function MessageSender() {
+  let post = useRef("");
+  const [posts, setPosts] = useState([
+    {
+      content: "Goood morning Vietnam!!",
+      user: "Bakos János",
+      timestamp: "30 m",
+      Icon: icon,
+      id: 0,
+    },
+  ]);
+
+  const addPost = (e) => {
+    if (e.key === "Enter") {
+      const newPosts = [
+        ...posts,
+        {
+          content: post.current.value,
+          user: "Bakos Janos",
+          timestamp: "53 m",
+          Icon: icon,
+          id: posts[posts.length - 1].id + 1,
+        },
+      ];
+
+      setPosts(newPosts);
+    }
+  };
+
   return (
     <div className="message-container w-full">
       <div className="w-full my-5 p-5 rounded-md message-sender">
@@ -15,6 +44,8 @@ function MessageSender() {
             className="ml-5 p-3 w-full rounded-full outline-none border-none message-input"
             type="text"
             placeholder="Whats on your mind, Bakos"
+            ref={post}
+            onKeyPress={addPost}
           />
         </div>
 
@@ -47,6 +78,8 @@ function MessageSender() {
           </div>
         </div>
       </div>
+
+      {<Post posts={posts} />}
     </div>
   );
 }
